@@ -1,0 +1,178 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>Mapa Geol&#243;gico</Name>
+    <AddInID>{f8cd02da-9e61-4817-9c3e-9626c2b16e98}</AddInID>
+    <Description>Mapa Geol&#243;gico</Description>
+    <Version>0.1.0</Version>
+    <Image>Images\ingemmet_logo.png</Image>
+    <Author>Dani Aguado Huaccharaqui</Author>
+    <Company>INGEMMET</Company>
+    <Date>09/25/2017</Date>
+    <Targets>
+        <Target name="Desktop" version="10.1"/>
+    </Targets>
+    <AddIn language="PYTHON" library="addin_addin.py" namespace="addin_addin">
+        <ArcMap>
+            <Commands>
+                <Button caption="config_gdb" category="Mapa Geol&#243;gico" class="configGdb" id="addin_addin.conngdb"
+                        image="Images\database.png"
+                        message="Configura la ubicaci&#243;n del Template GDB (Geodatabase plantilla) para ser usado por el toolbar actual."
+                        tip="Cargar ubicaci&#243;n" separator="true">
+                    <Help heading="Cargar ubicaci&#243;n">Cargar ubicaci&#243;n de Geodatabase</Help>
+                </Button>
+
+                <ComboBox caption=" Fila  " category="Mapa Geol&#243;gico" class="selectRow" id="addin_addin.getRow"
+                          itemSizeString="WWW" message="" rows="37" sizeString="WWW" tip="Selector de filas">
+                    <Help heading="Selector de filas"/>
+                </ComboBox>
+
+                <ComboBox caption=" Columna  " category="Mapa Geol&#243;gico" class="selectCol" id="addin_addin.getCol"
+                          itemSizeString="WWW" message="" rows="11" sizeString="WWW" tip="Selector de columnas">
+                    <Help heading="Selector de columnas"/>
+                </ComboBox>
+
+                <ComboBox caption=" Cuadrante  " category="Mapa Geol&#243;gico" class="selectQuad"
+                          id="addin_addin.getQuad" itemSizeString="WWW" message="" rows="4" sizeString="WWW"
+                          tip="Selector de cuadrantes">
+                    <Help heading="Selector de cuadrantes"/>
+                </ComboBox>
+
+                <Button caption="load_code" category="Mapa Geol&#243;gico" class="loadCode" id="addin_addin.loadCode"
+                        image="Images\select.png"
+                        message="Almacena el c&#243;digo de hoja seleccionado para su procesamiento" tip="Cargar c&#243;digo"
+                        separator="true">
+                    <Help heading="Cargar c&#243;digo">Cargar codigo de hoja</Help>
+                </Button>
+
+                <ComboBox caption=" Info. " category="Mapa Geol&#243;gico" class="infoHoja" id="addin_addin.informacion"
+                          itemSizeString="WWWWWWWWWWW" message="" rows="0" sizeString="WWWWWWWWWWW"
+                          tip="Nombre y zona geogr&#225;fica de la hoja seleccionada">
+                    <Help heading="Informaci&#243;n"/>
+                </ComboBox>
+
+                <Button caption="make_profile" category="Mapa Geol&#243;gico" class="makeProfile"
+                        id="addin_addin.Profile" image="Images\surface.png" message="Construye el perfil longitudinal"
+                        tip="Perfil Longitudinal" separator="true">
+                    <Help heading="Perfil Longitudinal">Perfil Longitudinal</Help>
+                </Button>
+
+                <Button caption="make_map" category="Mapa Geol&#243;gico" class="makeMap" id="addin_addin.MapGeo"
+                        image="Images\settings.png"
+                        message="Genera el mapa Geol&#243;gico obteniendo insumos directamente de la Geodatabase"
+                        tip="Generar Mapa Geol&#243;gico">
+                    <Help heading="Generar Mapa Geol&#243;gico">Generar Mapa Geol&#243;gico</Help>
+                </Button>
+
+                <Button caption="Tabla de Leyenda Geol&#243;gica" category="Mapa Geol&#243;gico" class="makeTableLegend"
+                        id="addin_addin.TbLegend" image="Images\makeTable.png"
+                        message="Obtener la tabla de leyenda a partir de la capa de Geolog&#237;a"
+                        tip="Tabla de leyenda">
+                    <Help heading="Tabla de leyenda">Tabla de leyenda</Help>
+                </Button>
+
+                <Button caption="Leyenda Geol&#243;gica" category="Mapa Geol&#243;gico" class="makeFeatureLegend"
+                        id="addin_addin.Legend" image="Images\legend.png" message="Construir Leyenda Geol&#243;gica"
+                        tip="Leyenda Geol&#243;gica">
+                    <Help heading="Leyenda Geol&#243;gica">Leyenda Geol&#243;gica</Help>
+                </Button>
+
+                <Button caption="S&#237;mbolos" category="Mapa Geol&#243;gico" class="makeSimbolLegend"
+                        id="addin_addin.Simbolos" image="Images\legendSeconds.png"
+                        message="Construye la leyenda de s&#237;mbolos del mapa" tip="Simbolos" separator="true">
+                    <Help heading="Simbolos">Simbolos</Help>
+                </Button>
+
+                <Button caption=" Dataciones " category="Mapa Geol&#243;gico" class="makeTableData"
+                        id="addin_addin.Datacion" image="Images\legend.png"
+                        message="Permite construir el esquema de dataciones" tip="Tabla de Dataciones" separator="true">
+                    <Help heading="Datacion head">Datacion</Help>
+                </Button>
+
+                <Button caption=" F&#243;siles " category="Mapa Geol&#243;gico" class="makeTableFosil" id="addin_addin.Fosil"
+                        image="Images\fossil.png" message="Permite construir el esquema de F&#243;siles"
+                        tip="Tabla de F&#243;siles" separator="true">
+                    <Help heading="Fosil head">F&#243;siles</Help>
+                </Button>
+
+                <Button caption=" Declinaci&#243;n Magn&#233;tica " category="Mapa Geol&#243;gico" class="makeDecli"
+                        id="addin_addin.Declinacion" image="Images\compass.png"
+                        message="Permite construir el esquema de Declinaci&#243;n Magnetica" tip="Declinaci&#243;n Magn&#233;tica"
+                        separator="true">
+                    <Help heading="Declinacion head">Declinaci&#243;n Magnetica</Help>
+                </Button>
+
+                <Button caption=" Gu&#237;a de usuario " category="Mapa Geol&#243;gico" class="guideUser"
+                        id="addin_addin.guide" image="Images\manual.png"
+                        message="Consulta las caracter&#237;sticas de esta herramienta en la gu&#237;a de uso"
+                        tip="Gu&#237;a de uso" separator="true">
+                    <Help heading="Guia head">Gu&#237;a de uso</Help>
+                </Button>
+
+                <Button caption=" Ubicaci&#243;n de geodatabase " category="Mapa Geol&#243;gico" class="openWs"
+                        id="addin_addin.workspace" image="Images\workspace.png"
+                        message="Abrir la ubicaci&#243;n del folder que contiene la geodatabase especificada"
+                        tip="Abrir folder" separator="true">
+                    <Help heading="Open folder head">Ubicaci&#243;n de geodatabase</Help>
+                </Button>
+
+                <Button caption=" Ver hoja  1:100000 " category="Mapa Geol&#243;gico" class="viewHoja"
+                        id="addin_addin.viewHoja" image="Images\quads.png"
+                        message="Visualiza la carta geol&#243;gica a escala 1:100k, especificada anteriormente"
+                        tip="Ver hoja 100k" separator="true">
+                    <Help heading="hoja100 head">Ver hoja 1:100000</Help>
+                </Button>
+
+            </Commands>
+            <Extensions>
+            </Extensions>
+            <Toolbars>
+                <Toolbar caption="Mapa Geol&#243;gico" category="Mapa Geol&#243;gico" id="addin_addin.toolbar"
+                         showInitially="true">
+                    <Items>
+                        <Button refID="addin_addin.conngdb"/>
+                        <ComboBox refID="addin_addin.getRow"/>
+                        <ComboBox refID="addin_addin.getCol"/>
+                        <ComboBox refID="addin_addin.getQuad"/>
+                        <Button refID="addin_addin.loadCode"/>
+                        <ComboBox refID="addin_addin.informacion"/>
+                        <Menu refID="addin_addin.legendGeology"/>
+                        <Menu refID="addin_addin.extra"/>
+                        <Button refID="addin_addin.Profile"/>
+                        <Button refID="addin_addin.MapGeo"/>
+                        <Menu refID="addin_addin.about"/>
+                    </Items>
+                </Toolbar>
+            </Toolbars>
+            <Menus>
+                <Menu caption=" ••• " category="Mapa Geol&#243;gico" id="addin_addin.about" isRootMenu="false"
+                      isShortcutMenu="false" separator="false">
+                    <Items>
+                        <Button refID="addin_addin.guide"/>
+                        <Button refID="addin_addin.workspace"/>
+                        <Button refID="addin_addin.viewHoja"/>
+                    </Items>
+                </Menu>
+            </Menus>
+            <Menus>
+                <Menu caption=" Leyenda " category="Mapa Geol&#243;gico" id="addin_addin.legendGeology"
+                      isRootMenu="false" isShortcutMenu="false" separator="true">
+                    <Items>
+                        <Button refID="addin_addin.TbLegend"/>
+                        <Button refID="addin_addin.Legend"/>
+                        <Button refID="addin_addin.Simbolos" separator="true"/>
+                    </Items>
+                </Menu>
+            </Menus>
+            <Menus>
+                <Menu caption=" Adicionales " category="Mapa Geol&#243;gico" id="addin_addin.extra" isRootMenu="false"
+                      isShortcutMenu="false" separator="true">
+                    <Items>
+                        <Button refID="addin_addin.Datacion"/>
+                        <Button refID="addin_addin.Fosil"/>
+                        <Button refID="addin_addin.Declinacion" separator="true"/>
+                    </Items>
+                </Menu>
+            </Menus>
+        </ArcMap>
+    </AddIn>
+</ESRI.Configuration>

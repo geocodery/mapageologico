@@ -1,0 +1,6 @@
+PILLOW==4.1.1
+qrcode==5.3
+numpy==1.13.3
+pandas==0.20.3
+
+

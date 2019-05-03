@@ -1,0 +1,30 @@
+﻿<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <title></title><!-- Titulo -->
+        <geoform>map</geoform><!-- Estatico -->
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract></abstract><!-- Descripcion -->
+      <purpose></purpose><!-- Resumen -->
+    </descript>
+    <keywords>
+      <theme>
+        <themekt>None</themekt>
+        <!-- Agregar etiquetas -->
+      </theme>
+    </keywords>
+    <accconst>None</accconst>
+    <useconst></useconst><!-- Usos y limitaciones -->
+    <datacred></datacred><!-- Creditos -->
+    <native></native><!-- Caracteristicas de equipo -->
+  </idinfo>
+  <metainfo>
+    <metd>20171128</metd><!-- Estatico -->
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn><!-- Estatico -->
+    <metstdv>FGDC-STD-001-1998</metstdv><!-- Estatico -->
+    <mettc>local time</mettc><!-- Estatico -->
+  </metainfo>
+</metadata>

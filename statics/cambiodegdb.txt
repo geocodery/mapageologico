@@ -1,0 +1,5 @@
+D:\JORGE_YUPANQUI\Desarrollo\gdb_para_infomg
+
+
+el gdb base de esta carpeta, se alterna enter los gdb en la
+ruta que está escrita líneas arriba.

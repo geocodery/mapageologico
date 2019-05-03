@@ -1,0 +1,30 @@
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <title>21-i2</title>
+        <geoform>map</geoform>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae enim vitae neque aliquam lacinia id non justo. Maecenas dictum fermentum varius. Cras rutrum interdum velit a efficitur. Ut placerat mauris ac ex finibus, eu suscipit mi volutpat. Sed lectus quam, sollicitudin et urna dignissim, scelerisque egestas purus. Proin nec auctor lorem. Duis sodales sagittis justo et hendrerit. Sed nec pellentesque diam, et auctor turpis.</abstract>
+      <purpose>Maecenas dictum fermentum varius. Cras rutrum interdum velit a efficitur</purpose>
+    </descript>
+    <keywords>
+      <theme>
+        <themekt>None</themekt>
+        
+      <themekey>Mapa Geol+ogico</themekey><themekey> Cuadrante de Itqui</themekey></theme>
+    </keywords>
+    <accconst>None</accconst>
+    <useconst />
+    <datacred />
+    <native>Microsoft Windows 7 Version 6.1 (Build 7601) Service Pack 1; Esri ArcGIS 10.4.1.5686</native>
+  </idinfo>
+  <metainfo>
+    <metd>20171128</metd>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+  </metainfo>
+</metadata>

@@ -1,0 +1,37 @@
+{
+  "displayFieldName": "",
+  "fieldAliases": {
+    "CODI": "CODI",
+    "HOJA": "HOJA",
+    "CUADRANTE": "CUADRANTE",
+    "CODHOJA": "CODHOJA"
+  },
+  "geometryType": "esriGeometryPolygon",
+  "fields": [
+    {
+      "name": "CODI",
+      "type": "esriFieldTypeInteger",
+      "alias": "CODI",
+      "length": 5
+    },
+    {
+      "name": "HOJA",
+      "type": "esriFieldTypeString",
+      "alias": "HOJA",
+      "length": 4
+    },
+    {
+      "name": "CUADRANTE",
+      "type": "esriFieldTypeString",
+      "alias": "CUADRANTE",
+      "length": 1
+    },
+    {
+      "name": "CODHOJA",
+      "type": "esriFieldTypeString",
+      "alias": "CODHOJA",
+      "length": 5
+    }
+  ],
+  "features": []
+}
